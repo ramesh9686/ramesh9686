@@ -1,390 +1,88 @@
-# How to Set Up Your GitHub Profile README
+# Ramesh G R (`ramesh9686`) — GitHub Profile README Setup & Customization Guide
 
-This guide explains how to recreate the GitHub profile README setup used in this repository, including Spotify integration, WakaTime stats, and GitHub activity tracking.
-
-## Table of Contents
-
-1. [Spotify Recently Played](#spotify-recently-played)
-2. [Spotify Now Playing](#spotify-now-playing)
-3. [WakaTime Statistics](#wakatime-statistics)
-4. [GitHub Activity Tracking](#github-activity-tracking)
-5. [Other README Elements](#other-readme-elements)
+This guide explains the architecture and services powering your GitHub profile README, including WakaTime metrics, GitHub telemetry cards, animated calligraphy signature, and dark modern / cyberpunk assets.
 
 ---
 
-## Spotify Recently Played
+## 📑 Table of Contents
 
-Display your recently played Spotify tracks on your GitHub profile README using the [spotify-recently-played-readme](https://github.com/JeffreyCA/spotify-recently-played-readme) service.
-
-### Setup Steps
-
-1. **Authorize the Spotify App**
-   - Visit [https://spotify-recently-played-readme.vercel.app/](https://spotify-recently-played-readme.vercel.app/)
-   - Click the "Authorize" button
-   - Log in with your Spotify account and grant permissions
-   - This uses OAuth2 to securely connect your Spotify account
-
-2. **Get Your Spotify Username**
-   - Your Spotify username is typically found in your Spotify profile URL: `https://open.spotify.com/user/YOUR_USERNAME`
-   - Example: If your URL is `https://open.spotify.com/user/11147618695`, your username is `11147618695`
-
-3. **Add to README**
-   - After authorization, copy the markdown code snippet provided
-   - Add it to your README.md file:
-   ```markdown
-   <p align="center">
-     <img src="https://spotify-recently-played-readme.vercel.app/api?user=YOUR_USERNAME&count=5">
-   </p>
-   ```
-
-4. **Customization Options**
-   - `count`: Number of tracks to display (default: 5, min: 1, max: 10)
-   - `width`: Card width in pixels (default: 400, min: 300, max: 1000)
-   - `unique`: Show only unique tracks (`true`, `1`, `on`, or `yes`)
-
-### Example Usage
-
-```markdown
-![Spotify recently played](https://spotify-recently-played-readme.vercel.app/api?user=11147618695&count=5)
-```
-
-### Repository
-
-- **GitHub**: [JeffreyCA/spotify-recently-played-readme](https://github.com/JeffreyCA/spotify-recently-played-readme)
-- **Service**: [spotify-recently-played-readme.vercel.app](https://spotify-recently-played-readme.vercel.app/)
+1. [WakaTime Activity Automation](#-wakatime-activity-automation)
+2. [GitHub Telemetry & Stats Cards](#-github-telemetry--stats-cards)
+3. [Cyberpunk Assets & Animated Graphics](#-cyberpunk-assets--animated-graphics)
+4. [Portfolio & Social Links](#-portfolio--social-links)
+5. [Maintenance & Routine Updates](#-maintenance--routine-updates)
 
 ---
 
-## Spotify Now Playing
+## ⏱️ WakaTime Activity Automation
 
-Display your currently playing Spotify track using the [spotify-github-profile](https://github.com/kittinan/spotify-github-profile) service.
-
-### Setup Steps
-
-1. **Authorize the Spotify App**
-   - Visit [https://spotify-github-profile.kittinanx.com/api/login](https://spotify-github-profile.kittinanx.com/api/login)
-   - Log in with your Spotify account using OAuth2
-   - Grant the necessary permissions
-
-2. **Get Your Spotify User ID**
-   - Your Spotify User ID is typically found in your Spotify profile URL
-   - Example: `https://open.spotify.com/user/11147618695` → User ID is `11147618695`
-
-3. **Add to README**
-   - Add the following markdown to your README.md:
-   ```markdown
-   <p align="center">
-     <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_USER_ID&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false">
-   </p>
-   ```
-
-4. **Customization Options**
-   - `uid`: Your Spotify User ID (required)
-   - `cover_image`: Show album cover (`true`/`false`)
-   - `theme`: Card theme (e.g., `novatorem`)
-   - `show_offline`: Show when offline (`true`/`false`)
-   - `background_color`: Background color (hex code)
-   - `bar_color`: Progress bar color (hex code)
-
-### Example Usage
-
-```markdown
-<p align="center">
-  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=11147618695&cover_image=true&theme=novatorem&show_offline=true&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false">
-</p>
-```
-
-### Repository
-
-- **GitHub**: [kittinan/spotify-github-profile](https://github.com/kittinan/spotify-github-profile)
-
----
-
-## WakaTime Statistics
-
-Track and display your coding statistics using WakaTime integration with GitHub Actions.
-
-### Prerequisites
-
-1. **WakaTime Account**
-   - Sign up at [https://wakatime.com](https://wakatime.com)
-   - Install the WakaTime plugin for your IDE/editor
-   - Get your WakaTime API key from [https://wakatime.com/settings/api-key](https://wakatime.com/settings/api-key)
-
-2. **GitHub Secrets**
-   - Go to your repository → Settings → Secrets and variables → Actions
-   - Add the following secrets:
-     - `WAKATIME_API_KEY`: Your WakaTime API key
-     - `GH_TOKEN`: A GitHub Personal Access Token with `repo` scope
-
-### Workflow 1: Detailed WakaTime Stats
-
-This workflow updates the detailed statistics section in your README.
-
-**File**: `.github/workflows/update-timestats.yml`
-
-```yaml
-name: wakatime-stats
-
-on:
-  schedule:
-    - cron: '0 12 * * *'  # Runs daily at 12:00 UTC
-
-jobs:
-  update-readme:
-    name: Update Readme with Metrics
-    runs-on: ubuntu-latest
-    steps:
-      - uses: anmol098/waka-readme-stats@master
-        with:
-          COMMIT_BY_ME: "False"
-          COMMIT_MESSAGE: "Updated dev metrics"
-          COMMIT_USERNAME: "YOUR_GITHUB_USERNAME"
-          COMMIT_EMAIL: "YOUR_EMAIL@example.com"
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          SHOW_OS: "False"
-          SHOW_PROJECTS: "True"
-          SHOW_UPDATED_DATE: "True"
-          SHOW_PROFILE_VIEWS: "False"
-          SHOW_EDITORS: "False"
-          SHOW_LANGUAGE: "True"
-          SHOW_LANGUAGE_PER_REPO: "False"
-          SHOW_LINES_OF_CODE: "True"
-          SHOW_COMMIT: "True"
-          SHOW_LOC_CHART: "False"
-          SHOW_DAYS_OF_WEEK: "False"
-          SHOW_SHORT_INFO: "True"
-```
-
-**Configuration Options**:
-- `SHOW_PROJECTS`: Display project time breakdown
-- `SHOW_LANGUAGE`: Display programming languages
-- `SHOW_LINES_OF_CODE`: Display total lines of code
-- `SHOW_COMMIT`: Display commit statistics
-- `SHOW_SHORT_INFO`: Display short summary info
-
-**README Section**:
-Add this section to your README.md where you want the stats to appear:
-
-```markdown
-<!--START_SECTION:waka-->
-<!-- Your stats will be automatically inserted here -->
-<!--END_SECTION:waka-->
-```
-
-### Workflow 2: Simple WakaTime Stats
-
-This workflow updates a simplified statistics section showing all-time language breakdown.
-
-**File**: `.github/workflows/waka-simple.yml`
-
-```yaml
-name: Waka Readme
-
-on:
-  workflow_dispatch:  # Allows manual trigger
-  schedule:
-    - cron: '30 14 * * *'  # Runs daily at 14:30 UTC
-
-jobs:
-  update-readme:
-    name: WakaReadme DevMetrics
-    runs-on: ubuntu-latest
-    steps:
-      - uses: guilyx/waka-readme@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          SECTION_NAME: "waka-simple"
-          COMMIT_MESSAGE: "Updated simple waka stats section"
-          BLOCKS: "⣀⣄⣤⣦⣶⣷⣿"
-          TIME_RANGE: all_time
-          SHOW_TIME: true
-          SHOW_MASKED_TIME: true
-          SHOW_TITLE: true
-```
-
-**Configuration Options**:
-- `SECTION_NAME`: The section name in README (must match `<!--START_SECTION:waka-simple-->`)
-- `TIME_RANGE`: `all_time`, `last_7_days`, `last_30_days`, etc.
-- `BLOCKS`: Unicode characters for progress bars
-- `SHOW_TIME`: Display time spent
-- `SHOW_TITLE`: Display section title
-
-**README Section**:
-Add this section to your README.md:
-
-```markdown
-<!--START_SECTION:waka-simple-->
-<!-- Your simple stats will be automatically inserted here -->
-<!--END_SECTION:waka-simple-->
-```
+The profile includes automatic WakaTime coding telemetry to display your programming language distribution and coding activity.
 
 ### Setup Instructions
 
-1. Create the workflow files in `.github/workflows/`
-2. Replace `YOUR_GITHUB_USERNAME` and `YOUR_EMAIL@example.com` with your details
-3. Add the required secrets to your repository
-4. Add the corresponding sections to your README.md
-5. The workflows will run automatically on schedule and update your README
+1. **Get your WakaTime API Key**:
+   - Log in to your account at [wakatime.com](https://wakatime.com)
+   - Navigate to [Account Settings → API Key](https://wakatime.com/settings/api-key)
+   - Copy your secret API key.
+
+2. **Generate GitHub Personal Access Token (PAT)**:
+   - Go to [GitHub Settings → Developer Settings → Personal Access Tokens (Classic)](https://github.com/settings/tokens)
+   - Generate a new token with `repo` scope permissions.
+   - Copy the generated token string.
+
+3. **Add Repository Secrets**:
+   - Navigate to this repository: `https://github.com/ramesh9686/ramesh9686/settings/secrets/actions`
+   - Click **"New repository secret"** and add:
+     - `WAKATIME_API_KEY`: *(Your WakaTime API Key)*
+     - `GH_TOKEN`: *(Your GitHub Personal Access Token)*
+
+4. **Verify GitHub Actions Workflow**:
+   - The workflow file is configured at `.github/workflows/update-timestats.yml`.
+   - It runs automatically every night at midnight UTC or can be manually triggered via the **Actions** tab by selecting **"WakaTime Dev Metrics"** → **"Run workflow"**.
 
 ---
 
-## GitHub Activity Tracking
+## 📈 GitHub Telemetry & Stats Cards
 
-Automatically track and display your recent GitHub activity (commits, PRs, issues, etc.) on your README.
+The profile features 4 synchronized cards styled with custom hex parameters to match the `#07090e` dark cyberpunk theme:
 
-### Setup Steps
+- **Overall Stats Card**:
+  `https://github-readme-stats.vercel.app/api?username=ramesh9686&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&bg_color=07090e&title_color=6366f1&text_color=94a3b8&icon_color=10b981&border_color=1e293b`
 
-1. **GitHub Personal Access Token**
-   - Go to [GitHub Settings → Developer settings → Personal access tokens → Tokens (classic)](https://github.com/settings/tokens)
-   - Generate a new token with `repo` scope
-   - Add it as a secret named `GH_TOKEN` in your repository
+- **GitHub Streak Card**:
+  `https://github-readme-streak-stats.herokuapp.com/?user=ramesh9686&theme=dark&background=07090e&border=1e293b&stroke=1e293b&ring=6366f1&fire=10b981&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=6366f1&sideLabels=94a3b8&dates=64748b`
 
-2. **Create Workflow File**
+- **Top Languages Card**:
+  `https://github-readme-stats.vercel.app/api/top-langs/?username=ramesh9686&layout=compact&theme=tokyonight&bg_color=07090e&title_color=6366f1&text_color=94a3b8&border_color=1e293b`
 
-**File**: `.github/workflows/update-gh-activity.yml`
-
-```yaml
-name: update-gh-activity
-
-on:
-  schedule:
-    - cron: '0 12 * * *'  # Runs daily at 12:00 UTC
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-```
-
-3. **Add Section to README**
-
-Add this section to your README.md where you want the activity to appear:
-
-```markdown
-**:zap: Recent Activity:**
-
-<!--START_SECTION:activity-->
-<!-- Your activity will be automatically inserted here -->
-<!--END_SECTION:activity-->
-```
-
-4. **How It Works**
-   - The workflow runs on a schedule (daily at 12:00 UTC)
-   - It fetches your recent GitHub activity
-   - Updates the README with the latest activity
-   - Commits the changes automatically
-
-### Customization
-
-You can modify the cron schedule to run at different times:
-- `'0 12 * * *'` - Daily at 12:00 UTC
-- `'0 */6 * * *'` - Every 6 hours
-- `'0 0 * * *'` - Daily at midnight UTC
+- **WakaTime Weekly Card**:
+  `https://github-readme-stats.vercel.app/api/wakatime?username=ramesh9686&theme=tokyonight&bg_color=07090e&title_color=6366f1&text_color=94a3b8&icon_color=10b981&border_color=1e293b&layout=compact`
 
 ---
 
-## Other README Elements
+## 🎨 Cyberpunk Assets & Animated Graphics
 
-### GitHub Profile Trophy
+Located in the [`assets/`](file:///c:/Users/Lenovo/Documents/ramesh9686/assets) directory:
 
-```markdown
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME&theme=onedark&column=-1" />
-</p>
-```
-
-### Activity Graph
-
-```markdown
-[![activity graph](https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=github-dark-dimmed&custom_title=Your%20Activity%20Graph&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-```
-
-### Visitor Badge
-
-```markdown
-![](https://visitor-badge.glitch.me/badge?page_id=YOUR_USERNAME.YOUR_REPO_NAME)
-```
-
-### Social Icons
-
-```markdown
-<p align="center">
-<a href="https://www.linkedin.com/in/YOUR_PROFILE">
-  <img alt="LinkedIn" width="50px" src="https://user-images.githubusercontent.com/43545812/144035037-0f415fc7-9f96-4517-a370-ccc6e78a714b.png" />
-</a>
-<a href="https://open.spotify.com/user/YOUR_SPOTIFY_ID">
-  <img alt="Spotify" width="50px" src="https://user-images.githubusercontent.com/43545812/144035120-1ad5169b-91c7-4078-bef9-6a82c733f373.png" />
-</a>
-</p>
-```
-
-### Workflow Badges
-
-```markdown
-[![Actions Status](https://github.com/YOUR_USERNAME/YOUR_REPO/workflows/wakatime-stats/badge.svg)](https://github.com/YOUR_USERNAME/YOUR_REPO/actions)
-[![Actions Status](https://github.com/YOUR_USERNAME/YOUR_REPO/workflows/update-gh-activity/badge.svg)](https://github.com/YOUR_USERNAME/YOUR_REPO/actions)
-```
+- **`header-banner.svg`**:
+  Vector cyberpunk banner with glowing radial atmosphere (#6366f1 indigo and #10b981 emerald), live telemetry readout, animated pulse indicator, and personal branding for Ramesh G R.
+- **`signature.svg`**:
+  Animated calligraphy cursive signature for "Ramesh G R" with glowing path rendering and metadata caption.
+- **`divider.svg`**:
+  Cyberpunk neon linear gradient divider with central nodes.
+- **Typing Headline**:
+  Powered by `readme-typing-svg` cycling through:
+  `"Data Engineer" | "Python Developer" | "ETL Pipeline Architect" | "Data Analytics Specialist"`.
 
 ---
 
-## Summary Checklist
+## 🌐 Portfolio & Social Links
 
-- [ ] Set up Spotify Recently Played (OAuth2 authorization)
-- [ ] Set up Spotify Now Playing (OAuth2 authorization)
-- [ ] Create WakaTime account and get API key
-- [ ] Add `WAKATIME_API_KEY` and `GH_TOKEN` secrets to repository
-- [ ] Create `.github/workflows/update-timestats.yml`
-- [ ] Create `.github/workflows/waka-simple.yml`
-- [ ] Create `.github/workflows/update-gh-activity.yml`
-- [ ] Add all required sections to README.md
-- [ ] Test workflows by manually triggering them
-- [ ] Verify all badges and widgets are displaying correctly
-
----
-
-## Troubleshooting
-
-### Spotify Widgets Not Showing
-
-- Ensure you've authorized the apps with OAuth2
-- Verify your Spotify User ID is correct
-- Check that the image URLs are accessible
-
-### WakaTime Stats Not Updating
-
-- Verify your `WAKATIME_API_KEY` is correct
-- Check that `GH_TOKEN` has `repo` scope
-- Ensure the section markers (`<!--START_SECTION:waka-->`) are in your README
-- Check GitHub Actions logs for errors
-
-### GitHub Activity Not Updating
-
-- Verify `GH_TOKEN` secret is set correctly
-- Check that the token has `repo` scope
-- Ensure section markers are present in README
-- Review workflow run logs for errors
-
-### Workflows Not Running
-
-- Check that workflows are enabled in repository settings
-- Verify cron syntax is correct
-- Ensure workflow files are in `.github/workflows/` directory
-- Check repository Actions tab for workflow runs
-
----
-
-## Resources
-
-- [Spotify Recently Played README](https://github.com/JeffreyCA/spotify-recently-played-readme)
-- [Spotify GitHub Profile](https://github.com/kittinan/spotify-github-profile)
-- [WakaTime](https://wakatime.com)
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [GitHub Profile README Guide](https://github.com/abhisheknaiidu/awesome-github-profile-readme)
+| Platform | Destination URL |
+| :--- | :--- |
+| **Interactive Portfolio** | [https://ramesh13.online](https://ramesh13.online) (Mirror: [Render Deployment](https://ramesh-portfolio-sh4i.onrender.com)) |
+| **LinkedIn** | [linkedin.com/in/ramesh-radhakrishnan-a1517a19a/](https://www.linkedin.com/in/ramesh-radhakrishnan-a1517a19a/) |
+| **Direct Email** | [grrameshyamini13@gmail.com](mailto:grrameshyamini13@gmail.com) |
+| **Resume (Google Drive)** | [View CV](https://drive.google.com/file/d/1JvWT49gFLIWxs67gSm-7QlFii-XSxmKa/view?usp=sharing) |
+| **GitHub Sponsors** | [github.com/sponsors/ramesh9686](https://github.com/sponsors/ramesh9686/) |
+| **Instagram** | [instagram.com/dynamo._13/](https://www.instagram.com/dynamo._13/) |

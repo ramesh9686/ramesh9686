@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="880" height="300" fill="none">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090e"/>
+      <stop offset="50%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#07090e"/>
+    </linearGradient>
+
+    <!-- Indigo Glow -->
+    <radialGradient id="indigoGlow" cx="20%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Emerald Glow -->
+    <radialGradient id="emeraldGlow" cx="80%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#a5b4fc"/>
+    </linearGradient>
+
+    <!-- Emerald Badge Gradient -->
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Card Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Monogram Gradient -->
+    <linearGradient id="monoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <!-- Filter Glow -->
+    <filter id="neonIndigo" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="neonEmerald" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Cyber Grid Pattern -->
+    <pattern id="cyberGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.4"/>
+      <circle cx="30" cy="0" r="1" fill="#6366f1" fill-opacity="0.3"/>
+    </pattern>
+
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.9; transform: scale(1); }
+        50% { opacity: 0.4; transform: scale(1.08); }
+      }
+      @keyframes liveDot {
+        0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px #10b981); }
+        50% { opacity: 0.35; filter: drop-shadow(0 0 1px #10b981); }
+      }
+      @keyframes scanbeam {
+        0% { transform: translateY(-50px); opacity: 0; }
+        50% { opacity: 0.15; }
+        100% { transform: translateY(320px); opacity: 0; }
+      }
+      @keyframes floatAnim {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-4px); }
+      }
+      .pulsing-dot { animation: liveDot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+      .ambient-pulse { animation: pulseGlow 6s ease-in-out infinite; }
+      .scanline { animation: scanbeam 8s ease-in-out infinite; }
+      .floating { animation: floatAnim 4s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="880" height="300" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Grid Matrix Overlay -->
+  <rect width="880" height="300" rx="16" fill="url(#cyberGrid)"/>
+
+  <!-- Radial Atmosphere Lighting -->
+  <circle cx="180" cy="110" r="260" fill="url(#indigoGlow)" class="ambient-pulse"/>
+  <circle cx="720" cy="190" r="240" fill="url(#emeraldGlow)" class="ambient-pulse"/>
+
+  <!-- Outer Cyber Border -->
+  <rect x="1" y="1" width="878" height="298" rx="15" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+  <!-- Top Cyber Accent Bar -->
+  <path d="M 24 1 L 180 1 L 195 12 L 340 12 L 355 1 L 856 1" fill="none" stroke="#6366f1" stroke-width="2" stroke-opacity="0.8"/>
+  <path d="M 680 299 L 856 299" fill="none" stroke="#10b981" stroke-width="2.5" stroke-opacity="0.9"/>
+
+  <!-- Corner Tech Accents -->
+  <g stroke="#6366f1" stroke-width="1.5" opacity="0.6">
+    <path d="M 12 28 L 12 12 L 28 12"/>
+    <path d="M 868 28 L 868 12 L 852 12"/>
+    <path d="M 12 272 L 12 288 L 28 288"/>
+    <path d="M 868 272 L 868 288 L 852 288"/>
+  </g>
+
+  <!-- Scanline Light Bar -->
+  <rect x="0" y="0" width="880" height="40" fill="url(#indigoGlow)" class="scanline" pointer-events="none"/>
+
+  <!-- Left: Monogram Badge (Ramesh G R) -->
+  <g transform="translate(42, 54)" class="floating">
+    <!-- Glow Backing -->
+    <rect x="-4" y="-4" width="96" height="96" rx="20" fill="none" stroke="url(#monoGrad)" stroke-width="1.5" opacity="0.4"/>
+    
+    <!-- Shield Container -->
+    <rect x="0" y="0" width="88" height="88" rx="16" fill="#0d111c" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="4" y="4" width="80" height="80" rx="12" fill="#090d16" stroke="#2a334d" stroke-width="1"/>
+    
+    <!-- Monogram RG / Cyber Emblem -->
+    <path d="M 28 24 L 28 64 M 28 24 L 46 24 C 54 24 58 28 58 36 C 58 44 54 48 46 48 L 28 48 M 44 48 L 58 64" 
+          stroke="url(#titleGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Accent Spark -->
+    <circle cx="58" cy="36" r="3" fill="#10b981" filter="url(#neonEmerald)"/>
+    <circle cx="28" cy="64" r="2.5" fill="#6366f1" filter="url(#neonIndigo)"/>
+
+    <!-- Micro Monogram Subtitle -->
+    <text x="44" y="77" fill="#64748b" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="7.5" font-weight="700" text-anchor="middle" letter-spacing="1.5">RAMZ-13</text>
+  </g>
+
+  <!-- Status Chip: Live Working Info -->
+  <g transform="translate(156, 48)">
+    <rect x="0" y="0" width="410" height="26" rx="13" fill="#0f172a" fill-opacity="0.85" stroke="#1e293b" stroke-width="1"/>
+    <!-- Pulsing Live Dot -->
+    <circle cx="14" cy="13" r="4.5" fill="#10b981" class="pulsing-dot"/>
+    <text x="26" y="17" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" letter-spacing="0.5">AVG GRAPHICS</text>
+    <text x="110" y="17" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">•</text>
+    <text x="124" y="17" fill="#cbd5e1" font-family="'Inter', -apple-system, sans-serif" font-size="10.5" font-weight="500">Automated ETL Pipelines &amp; BI Analytics</text>
+  </g>
+
+  <!-- Terminal Command Prompt Decor -->
+  <g transform="translate(156, 92)">
+    <text x="0" y="0" fill="#6366f1" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">ramesh13@cybernet</text>
+    <text x="142" y="0" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="13">:</text>
+    <text x="152" y="0" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600">~/profile</text>
+    <text x="216" y="0" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="13">$ cat role.py</text>
+  </g>
+
+  <!-- Hero Name: RAMESH G R -->
+  <g transform="translate(156, 142)">
+    <text x="0" y="0" fill="url(#titleGrad)" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5">RAMESH G R</text>
+    <!-- Handle Badge -->
+    <g transform="translate(305, -34)">
+      <rect x="0" y="0" width="138" height="24" rx="12" fill="#1e1b4b" stroke="#6366f1" stroke-width="1"/>
+      <text x="69" y="16" fill="#a5b4fc" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" text-anchor="middle">@ramesh9686</text>
+    </g>
+  </g>
+
+  <!-- Headline Role & Degree -->
+  <g transform="translate(158, 175)">
+    <text x="0" y="0" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="14.5" font-weight="700" letter-spacing="0.5">DATA ENGINEER &amp; PYTHON DEVELOPER</text>
+    <text x="320" y="0" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="14">|</text>
+    <text x="334" y="0" fill="#94a3b8" font-family="'Inter', -apple-system, sans-serif" font-size="13.5" font-weight="500">M.Tech in Software Engineering</text>
+  </g>
+
+  <!-- Tagline / Bio Hook -->
+  <g transform="translate(158, 204)">
+    <text x="0" y="0" fill="#94a3b8" font-family="'Inter', -apple-system, sans-serif" font-size="12" font-style="italic">
+      "Bridging raw data with actionable intelligence — scalable ETL, DB optimizations &amp; BI dashboards."
+    </text>
+  </g>
+
+  <!-- Interactive / High-Impact Pills Bar -->
+  <g transform="translate(158, 232)">
+    <!-- Pill 1: Python & SQL -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="124" height="28" rx="8" fill="#131b2e" stroke="#253556" stroke-width="1"/>
+      <text x="62" y="18" fill="#a5b4fc" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" text-anchor="middle">⚡ Python &amp; SQL</text>
+    </g>
+
+    <!-- Pill 2: ETL & Cloud Pipelines -->
+    <g transform="translate(132, 0)">
+      <rect x="0" y="0" width="170" height="28" rx="8" fill="#0f2524" stroke="#134e48" stroke-width="1"/>
+      <text x="85" y="18" fill="#34d399" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" text-anchor="middle">⚙️ Scalable ETL &amp; AWS</text>
+    </g>
+
+    <!-- Pill 3: BI Dashboards & ML -->
+    <g transform="translate(310, 0)">
+      <rect x="0" y="0" width="168" height="28" rx="8" fill="#1a1c2e" stroke="#3730a3" stroke-width="1"/>
+      <text x="84" y="18" fill="#c084fc" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" text-anchor="middle">📊 BI &amp; Predictive ML</text>
+    </g>
+
+    <!-- Pill 4: WebGL & Modern Stack -->
+    <g transform="translate(486, 0)">
+      <rect x="0" y="0" width="162" height="28" rx="8" fill="#171e2e" stroke="#1e293b" stroke-width="1"/>
+      <text x="81" y="18" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" text-anchor="middle">🌐 Three.js &amp; Django</text>
+    </g>
+  </g>
+
+  <!-- Right Side Cyber Metric Telemetry -->
+  <g transform="translate(710, 52)">
+    <!-- Tech Frame Box -->
+    <rect x="0" y="0" width="138" height="152" rx="12" fill="#0b0f19" fill-opacity="0.9" stroke="#1e293b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="138" height="24" rx="10" fill="#131b2e" stroke="#1e293b" stroke-width="0.8"/>
+    <text x="69" y="16" fill="#6366f1" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" text-anchor="middle" letter-spacing="1">TELEMETRY_SYS</text>
+    
+    <!-- Rows -->
+    <g transform="translate(12, 42)">
+      <text x="0" y="0" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9">TARGET</text>
+      <text x="114" y="0" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" text-anchor="end">ETL / DATA</text>
+
+      <text x="0" y="24" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9">CLOUD</text>
+      <text x="114" y="24" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" text-anchor="end">AWS / SPARK</text>
+
+      <text x="0" y="48" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9">DATABASE</text>
+      <text x="114" y="48" fill="#c084fc" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" text-anchor="end">POSTGRES/DUCK</text>
+
+      <text x="0" y="72" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="9">STATUS</text>
+      <text x="114" y="72" fill="#4ade80" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" text-anchor="end">ONLINE • 24/7</text>
+    </g>
+
+    <!-- Mini Activity Pulse Bar -->
+    <g transform="translate(12, 132)">
+      <rect x="0" y="0" width="114" height="6" rx="3" fill="#1e293b"/>
+      <rect x="0" y="0" width="82" height="6" rx="3" fill="url(#monoGrad)"/>
+    </g>
+  </g>
+
+  <!-- Bottom Binary Watermark -->
+  <g transform="translate(42, 282)">
+    <text x="0" y="0" fill="#334155" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.5">
+      LAT: 12.9716° N // LON: 77.5946° E // CORE ARCHITECTURE: SCALABLE PIPELINES // RAMESH G R (RAMZ)
+    </text>
+  </g>
+</svg>
