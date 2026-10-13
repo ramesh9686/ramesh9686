@@ -150,13 +150,93 @@
   <br />
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-58%20hrs%2016%20mins-blue?style=flat)
+
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-51%20hrs%2059%20mins-blue?style=flat)
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-830.44%20thousand%20lines%20of%20code-blue?style=flat)
+
+**🐱 My GitHub Data** 
+
+> 📦 ? Used in GitHub's Storage 
+ > 
+> 🏆 117 Contributions in the Year 2026
+ > 
+> 🚫 Not Opted to Hire
+ > 
+> 📜 18 Public Repositories 
+ > 
+> 🔑 0 Private Repositories 
+ > 
+**I'm an Early 🐤** 
+
 ```text
-Python           ████████████████████░░░░░   68.5%
-SQL              ██████████░░░░░░░░░░░░░░░   18.2%
-TypeScript/JS    ████░░░░░░░░░░░░░░░░░░░░░    7.4%
-Shell / Docker   ██░░░░░░░░░░░░░░░░░░░░░░░    3.9%
-YAML / Config    █░░░░░░░░░░░░░░░░░░░░░░░░    2.0%
+🌞 Morning                19 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.24 % 
+🌆 Daytime                64 commits          ██████████████░░░░░░░░░░░   54.70 % 
+🌃 Evening                34 commits          ███████░░░░░░░░░░░░░░░░░░   29.06 % 
+🌙 Night                  0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 ```
+📅 **I'm Most Productive on Saturday** 
+
+```text
+Monday                   10 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.55 % 
+Tuesday                  23 commits          █████░░░░░░░░░░░░░░░░░░░░   19.66 % 
+Wednesday                8 commits           ██░░░░░░░░░░░░░░░░░░░░░░░   06.84 % 
+Thursday                 19 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.24 % 
+Friday                   23 commits          █████░░░░░░░░░░░░░░░░░░░░   19.66 % 
+Saturday                 29 commits          ██████░░░░░░░░░░░░░░░░░░░   24.79 % 
+Sunday                   5 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   04.27 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Kolkata
+
+💬 Programming Languages: 
+JavaScript               1 hr 36 mins        █████████░░░░░░░░░░░░░░░░   35.37 % 
+Python                   1 hr 13 mins        ███████░░░░░░░░░░░░░░░░░░   27.14 % 
+HTML                     44 mins             ████░░░░░░░░░░░░░░░░░░░░░   16.44 % 
+Other                    27 mins             ███░░░░░░░░░░░░░░░░░░░░░░   10.23 % 
+Markdown                 15 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.75 % 
+
+🔥 Editors: 
+Antigravity IDE          4 hrs 31 mins       █████████████████████████   100.00 % 
+
+🐱‍💻 Projects: 
+Ramesh_portfolio         4 hrs 31 mins       █████████████████████████   99.74 % 
+Unknown Project          0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.26 % 
+```
+
+🤖 **AI Coding This Week** 
+
+```text
+⏱ AI Coding Time: 4 hrs 29 mins (99.01%)
+
+✍️ 759 lines written by AI, 0 lines written by hand (100.0% AI-written)
+
+🔤 8,714,738 Input Tokens, 394,527 Output Tokens
+
+💵 $21.89 Estimated AI Cost This Week
+
+🧠 5 AI Sessions, 27 AI Prompts
+
+Gemini                   778 lines           █████████████████████████   100.00 % 
+
+🔎 AI Coding Insights:
+🤖 AI-Driven — 100.0% of written lines came from AI
+📝 Concise Prompter — average 243 characters per prompt
+🔁 Iterative Prompter — average 5 prompts per session
+🚀 High AI Trust — 0.0% of changed lines were hand-edited
+```
+
+**Timeline**
+
+![Lines of Code chart](https://raw.githubusercontent.com/ramesh9686/ramesh9686/master/assets/bar_graph.png)
+
+
+ Last Updated on 13/10/2026 11:23:58 UTC
 <!--END_SECTION:waka-->
 
 </details>
