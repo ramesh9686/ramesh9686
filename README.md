@@ -45,27 +45,10 @@
 
 ## 🛰️ Current Mission &amp; Engineering Focus
 
-```yaml
-identity:
-  name: "Ramesh G R"
-  aliases: ["ramesh13", "ramz"]
-  education: "M.Tech in Software Engineering"
-  role: "Data Engineer & Python Developer"
-
-current_deployment:
-  workplace: "AVG Graphics"
-  initiatives:
-    - "Advanced predictive models for business forecasting"
-    - "Automated, high-throughput ETL data pipelines"
-    - "Interactive executive Business Intelligence (BI) dashboards"
-
-upskilling_vector:
-  cloud_data_stack: ["Apache Spark", "Apache Kafka", "Distributed Processing"]
-  architecture: ["AWS Cloud Architecture", "Serverless DevOps", "Lambda Pipelines"]
-
-collaboration_scope:
-  open_for: ["High-impact Data Engineering solutions", "Scalable analytics infrastructure", "Data-driven architectures"]
-```
+- 💼 **Current Focus:** Working on advanced predictive models, automated ETL data pipelines, and BI analytics dashboards at **AVG Graphics**.
+- 🌱 **Learning &amp; Upskilling:** Modern Cloud Data Stack, Distributed Data Pipelines (**Apache Spark**, **Kafka**), and **AWS Cloud Architecture** / Serverless DevOps.
+- 🤝 **Looking to Collaborate on:** High-impact Data Engineering solutions, scalable analytics infrastructure, and data-driven systems.
+- 🎓 **Background &amp; Credentials:** **M.Tech in Software Engineering** | Data Engineer &amp; Python Developer (`ramesh13` / `ramz`).
 
 <img src="assets/divider.svg" width="100%" alt="Divider" />
 
