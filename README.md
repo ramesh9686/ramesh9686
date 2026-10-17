@@ -150,17 +150,17 @@
   <br />
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-61%20hrs%2057%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-66%20hrs%204%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-56%20hrs%201%20min-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-59%20hrs%2058%20mins-blue?style=flat)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-835.95%20thousand%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-838.94%20thousand%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
 > 📦 ? Used in GitHub's Storage 
  > 
-> 🏆 124 Contributions in the Year 2026
+> 🏆 130 Contributions in the Year 2026
  > 
 > 🚫 Not Opted to Hire
  > 
@@ -171,21 +171,21 @@
 **I'm an Early 🐤** 
 
 ```text
-🌞 Morning                19 commits          ████░░░░░░░░░░░░░░░░░░░░░   15.20 % 
-🌆 Daytime                70 commits          ██████████████░░░░░░░░░░░   56.00 % 
-🌃 Evening                36 commits          ███████░░░░░░░░░░░░░░░░░░   28.80 % 
+🌞 Morning                19 commits          ████░░░░░░░░░░░░░░░░░░░░░   14.50 % 
+🌆 Daytime                76 commits          ███████████████░░░░░░░░░░   58.02 % 
+🌃 Evening                36 commits          ███████░░░░░░░░░░░░░░░░░░   27.48 % 
 🌙 Night                  0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
 ```
-📅 **I'm Most Productive on Saturday** 
+📅 **I'm Most Productive on Friday** 
 
 ```text
-Monday                   10 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   08.00 % 
-Tuesday                  23 commits          █████░░░░░░░░░░░░░░░░░░░░   18.40 % 
-Wednesday                13 commits          ███░░░░░░░░░░░░░░░░░░░░░░   10.40 % 
-Thursday                 22 commits          ████░░░░░░░░░░░░░░░░░░░░░   17.60 % 
-Friday                   23 commits          █████░░░░░░░░░░░░░░░░░░░░   18.40 % 
-Saturday                 29 commits          ██████░░░░░░░░░░░░░░░░░░░   23.20 % 
-Sunday                   5 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   04.00 % 
+Monday                   10 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   07.63 % 
+Tuesday                  23 commits          ████░░░░░░░░░░░░░░░░░░░░░   17.56 % 
+Wednesday                13 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   09.92 % 
+Thursday                 22 commits          ████░░░░░░░░░░░░░░░░░░░░░   16.79 % 
+Friday                   29 commits          ██████░░░░░░░░░░░░░░░░░░░   22.14 % 
+Saturday                 29 commits          ██████░░░░░░░░░░░░░░░░░░░   22.14 % 
+Sunday                   5 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   03.82 % 
 ```
 
 
@@ -195,42 +195,43 @@ Sunday                   5 commits           █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               2 hrs 5 mins        ████░░░░░░░░░░░░░░░░░░░░░   16.39 % 
-JavaScript               2 hrs 1 min         ████░░░░░░░░░░░░░░░░░░░░░   15.87 % 
-CSS                      1 hr 52 mins        ████░░░░░░░░░░░░░░░░░░░░░   14.74 % 
-HTML                     1 hr 45 mins        ███░░░░░░░░░░░░░░░░░░░░░░   13.74 % 
-Python                   1 hr 33 mins        ███░░░░░░░░░░░░░░░░░░░░░░   12.25 % 
+TypeScript               3 hrs 14 mins       █████░░░░░░░░░░░░░░░░░░░░   21.43 % 
+CSS                      2 hrs 34 mins       ████░░░░░░░░░░░░░░░░░░░░░   17.02 % 
+HTML                     2 hrs 28 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.37 % 
+Python                   1 hr 38 mins        ███░░░░░░░░░░░░░░░░░░░░░░   10.87 % 
+JavaScript               1 hr 33 mins        ███░░░░░░░░░░░░░░░░░░░░░░   10.34 % 
 
 🔥 Editors: 
-Antigravity IDE          12 hrs 45 mins      █████████████████████████   100.00 % 
+Antigravity IDE          15 hrs 5 mins       █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-Ramesh_portfolio         6 hrs 32 mins       █████████████░░░░░░░░░░░░   51.27 % 
-World-Explorer           5 hrs 26 mins       ███████████░░░░░░░░░░░░░░   42.59 % 
-ramesh9686               44 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.81 % 
-Unknown Project          2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.33 % 
+World-Explorer           9 hrs 7 mins        ███████████████░░░░░░░░░░   60.44 % 
+Ramesh_portfolio         5 hrs 10 mins       █████████░░░░░░░░░░░░░░░░   34.34 % 
+ramesh9686               44 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.91 % 
+Unknown Project          2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.28 % 
+OldMap                   0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.03 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 12 hrs 27 mins (97.68%)
+⏱ AI Coding Time: 14 hrs 47 mins (98.05%)
 
-✍️ 8,294 lines written by AI, 3 lines written by hand (99.96% AI-written)
+✍️ 9,646 lines written by AI, 3 lines written by hand (99.97% AI-written)
 
-🔤 17,771,836 Input Tokens, 1,227,603 Output Tokens
+🔤 17,066,585 Input Tokens, 1,573,597 Output Tokens
 
-💵 $49.82 Estimated AI Cost This Week
+💵 $52.58 Estimated AI Cost This Week
 
-🧠 13 AI Sessions, 91 AI Prompts
+🧠 14 AI Sessions, 99 AI Prompts
 
-Gemini                   8,752 lines         █████████████████████████   100.00 % 
+Gemini                   10,145 lines        █████████████████████████   100.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 99.96% of written lines came from AI
-📝 Concise Prompter — average 252 characters per prompt
+🤖 AI-Driven — 99.97% of written lines came from AI
+📝 Concise Prompter — average 205 characters per prompt
 🔁 Iterative Prompter — average 7 prompts per session
-🚀 High AI Trust — 2.14% of changed lines were hand-edited
+🚀 High AI Trust — 1.85% of changed lines were hand-edited
 ```
 
 **Timeline**
@@ -238,7 +239,7 @@ Gemini                   8,752 lines         ███████████�
 ![Lines of Code chart](https://raw.githubusercontent.com/ramesh9686/ramesh9686/master/assets/bar_graph.png)
 
 
- Last Updated on 16/10/2026 02:38:03 UTC
+ Last Updated on 17/10/2026 02:30:14 UTC
 <!--END_SECTION:waka-->
 
 </details>
