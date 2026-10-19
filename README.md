@@ -150,9 +150,9 @@
   <br />
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-69%20hrs%2042%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-70%20hrs%206%20mins-blue?style=flat)
 
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-63%20hrs%2037%20mins-blue?style=flat)
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-64%20hrs%201%20min-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-838.94%20thousand%20lines%20of%20code-blue?style=flat)
 
@@ -195,43 +195,43 @@ Sunday                   5 commits           █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-TypeScript               3 hrs 14 mins       ██████░░░░░░░░░░░░░░░░░░░   22.57 % 
-CSS                      2 hrs 34 mins       ████░░░░░░░░░░░░░░░░░░░░░   17.92 % 
-HTML                     2 hrs 25 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.90 % 
-Python                   1 hr 19 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   09.20 % 
-JavaScript               1 hr 16 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   08.90 % 
+TypeScript               3 hrs 14 mins       ██████░░░░░░░░░░░░░░░░░░░   24.07 % 
+CSS                      2 hrs 33 mins       █████░░░░░░░░░░░░░░░░░░░░   19.08 % 
+HTML                     2 hrs 15 mins       ████░░░░░░░░░░░░░░░░░░░░░   16.84 % 
+Python                   1 hr 18 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   09.79 % 
+JavaScript               47 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.94 % 
 
 🔥 Editors: 
-Antigravity IDE          14 hrs 19 mins      █████████████████████████   100.00 % 
+Antigravity IDE          13 hrs 26 mins      █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-World-Explorer           9 hrs 7 mins        ████████████████░░░░░░░░░   63.66 % 
-Ramesh_portfolio         4 hrs 25 mins       ████████░░░░░░░░░░░░░░░░░   30.85 % 
-ramesh9686               44 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.17 % 
-Unknown Project          2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.29 % 
+World-Explorer           9 hrs 7 mins        █████████████████░░░░░░░░   67.86 % 
+Ramesh_portfolio         3 hrs 31 mins       ███████░░░░░░░░░░░░░░░░░░   26.28 % 
+ramesh9686               44 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   05.52 % 
+Unknown Project          2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.31 % 
 OldMap                   0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.03 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 14 hrs 1 min (97.95%)
+⏱ AI Coding Time: 13 hrs 8 mins (97.81%)
 
-✍️ 9,219 lines written by AI, 3 lines written by hand (99.97% AI-written)
+✍️ 9,113 lines written by AI, 3 lines written by hand (99.97% AI-written)
 
-🔤 14,575,902 Input Tokens, 1,437,806 Output Tokens
+🔤 13,763,111 Input Tokens, 1,395,964 Output Tokens
 
-💵 $45.97 Estimated AI Cost This Week
+💵 $43.84 Estimated AI Cost This Week
 
-🧠 13 AI Sessions, 104 AI Prompts
+🧠 12 AI Sessions, 95 AI Prompts
 
-Gemini                   9,714 lines         █████████████████████████   100.00 % 
+Gemini                   9,608 lines         █████████████████████████   100.00 % 
 
 🔎 AI Coding Insights:
 🤖 AI-Driven — 99.97% of written lines came from AI
-📝 Concise Prompter — average 201 characters per prompt
+📝 Concise Prompter — average 213 characters per prompt
 🔁 Iterative Prompter — average 8 prompts per session
-🚀 High AI Trust — 1.93% of changed lines were hand-edited
+🚀 High AI Trust — 1.95% of changed lines were hand-edited
 ```
 
 **Timeline**
@@ -239,7 +239,7 @@ Gemini                   9,714 lines         ███████████�
 ![Lines of Code chart](https://raw.githubusercontent.com/ramesh9686/ramesh9686/master/assets/bar_graph.png)
 
 
- Last Updated on 18/10/2026 02:30:34 UTC
+ Last Updated on 19/10/2026 02:44:22 UTC
 <!--END_SECTION:waka-->
 
 </details>
