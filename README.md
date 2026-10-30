@@ -195,43 +195,43 @@ Sunday                   5 commits           █░░░░░░░░░░�
 🕑︎ Time Zone: Asia/Kolkata
 
 💬 Programming Languages: 
-Python                   59 mins             █████████████░░░░░░░░░░░░   53.78 % 
-JSON                     27 mins             ██████░░░░░░░░░░░░░░░░░░░   25.42 % 
-TypeScript               18 mins             ████░░░░░░░░░░░░░░░░░░░░░   16.68 % 
-Other                    2 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.37 % 
-HTML                     1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   01.28 % 
+Python                   24 mins             █████████████████░░░░░░░░   67.50 % 
+TypeScript               6 mins              █████░░░░░░░░░░░░░░░░░░░░   18.99 % 
+Other                    2 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   07.09 % 
+JSON                     2 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   06.13 % 
+HTML                     0 secs              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.29 % 
 
 🔥 Editors: 
-Antigravity IDE          1 hr 49 mins        █████████████████████████   100.00 % 
+Antigravity IDE          36 mins             █████████████████████████   100.00 % 
 
 🐱‍💻 Projects: 
-World-Explorer           44 mins             ██████████░░░░░░░░░░░░░░░   40.72 % 
-ME                       19 mins             █████░░░░░░░░░░░░░░░░░░░░   18.16 % 
-HRM                      12 mins             ███░░░░░░░░░░░░░░░░░░░░░░   11.02 % 
-MM                       9 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   08.48 % 
-Unknown Project          7 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   07.13 % 
+HRM                      12 mins             ████████░░░░░░░░░░░░░░░░░   33.05 % 
+Unknown Project          7 mins              █████░░░░░░░░░░░░░░░░░░░░   21.37 % 
+World-Explorer           7 mins              █████░░░░░░░░░░░░░░░░░░░░   20.33 % 
+SMDM                     3 mins              ███░░░░░░░░░░░░░░░░░░░░░░   10.20 % 
+FM                       2 mins              ██░░░░░░░░░░░░░░░░░░░░░░░   07.82 % 
 ```
 
 🤖 **AI Coding This Week** 
 
 ```text
-⏱ AI Coding Time: 1 hr 49 mins (99.88%)
+⏱ AI Coding Time: 36 mins (99.91%)
 
-✍️ 2,149 lines written by AI, 2 lines written by hand (99.91% AI-written)
+✍️ 1,589 lines written by AI, 1 lines written by hand (99.94% AI-written)
 
-🔤 1,020,850 Input Tokens, 135,996 Output Tokens
+🔤 430,703 Input Tokens, 81,161 Output Tokens
 
-💵 $3.67 Estimated AI Cost This Week
+💵 $1.84 Estimated AI Cost This Week
 
-🧠 10 AI Sessions, 22 AI Prompts
+🧠 6 AI Sessions, 8 AI Prompts
 
-Gemini                   2,195 lines         █████████████████████████   100.00 % 
+Gemini                   1,589 lines         █████████████████████████   100.00 % 
 
 🔎 AI Coding Insights:
-🤖 AI-Driven — 99.91% of written lines came from AI
-📝 Concise Prompter — average 495 characters per prompt
-🔁 Iterative Prompter — average 2 prompts per session
-🚀 High AI Trust — 0.09% of changed lines were hand-edited
+🤖 AI-Driven — 99.94% of written lines came from AI
+📄 Detailed Prompter — average 770 characters per prompt
+🎯 One-Shot Prompter — average 1 prompts per session
+🚀 High AI Trust — 0.06% of changed lines were hand-edited
 ```
 
 **Timeline**
@@ -239,7 +239,7 @@ Gemini                   2,195 lines         ███████████�
 ![Lines of Code chart](https://raw.githubusercontent.com/ramesh9686/ramesh9686/master/assets/bar_graph.png)
 
 
- Last Updated on 29/10/2026 03:50:44 UTC
+ Last Updated on 30/10/2026 03:53:56 UTC
 <!--END_SECTION:waka-->
 
 </details>
